@@ -4,6 +4,7 @@
       app
       color="primary"
       flat
+      dark
     >
       <div class="d-flex align-center">
         <v-img
@@ -31,23 +32,26 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <Decision v-bind:title="titles"  :answers="answers"/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Decision from './components/Decision';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Decision
   },
 
   data: () => ({
-    //
+
+    //question and answer data
+    titles: ["Are you happy", "What are you"],
+    answers: [["yes", "no"], ["male", "female"]]
   }),
 };
 </script>
