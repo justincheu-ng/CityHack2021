@@ -32,24 +32,27 @@
     </v-app-bar>
 
     <v-main>
-      <Decision v-bind:title="titles"  :answers="answers"/>
+      <!--Decision v-bind:title="titles"  :answers="answers"/-->
+      <Confirm/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Decision from './components/Decision';
+//import Decision from './components/Decision';
+import Confirm from './components/Confirm';
 
 export default {
   name: 'App',
 
   components: {
-    Decision
+    //Decision,
+    Confirm
   },
 
   data: () => ({
 
-    //question and answer data
+    //question and answer data for the Dicision.vue
     titles: ["Are you happy", "What are you"],
     answers: [["yes", "no"], ["male", "female"]]
   }),
