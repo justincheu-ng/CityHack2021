@@ -33,21 +33,24 @@
 
     <v-main>
       <!--Decision v-bind:title="titles"  :answers="answers"/-->
-      <Confirm/>
+      <!--Confirm/-->
+      <Dashboard/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 //import Decision from './components/Decision';
-import Confirm from './components/Confirm';
+//import Confirm from './components/Confirm';
+import Dashboard from './components/Dashboard';
 
 export default {
   name: 'App',
 
   components: {
     //Decision,
-    Confirm
+    //Confirm,
+    Dashboard
   },
 
   data: () => ({
