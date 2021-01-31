@@ -6,7 +6,7 @@
           <v-card
             :elevation="hover ? 12 : 5"
             class="mx-auto"
-            height="1500"
+            height="1700"
             max-width="800"
           >
             <v-card-text class="my-4 text-left title">
